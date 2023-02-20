@@ -1,8 +1,10 @@
-#include <stdlib.h>
+#include <stdlib.h> 
+#include <stdio.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - print if the number is positive,nagative or 0
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n;
@@ -11,7 +13,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		print("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else  if (n == 0)
 	{
@@ -19,6 +21,7 @@ int main(void)
 	}
 	else
 	{
-		print("%d is nagative\n", n);
+		printf("%d is nagative\n", n);
+	}
 	return (0);
 }
