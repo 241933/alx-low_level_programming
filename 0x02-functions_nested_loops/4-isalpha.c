@@ -1,14 +1,24 @@
 #include "main.h"
 
 /**
- * _lsalpha - checks for alphabet
- * @c: character to be checked
- * Return: 1 if character is a later,0 otherwise
- */
+   *_isalpha - checks if character is alphanumeric
+   *@c: character to be checked
+   *
+   *Return: This function returns 1 or 0 depending on input
+   */
+
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c <= 'A' && c <= 'Z'))
+	if (c <= 122 && c >= 97)
+	{
 		return (1);
+	}
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
 	else
+	{
 		return (0);
+	}
 }
