@@ -17,5 +17,6 @@ void 101-natural(void);
 int 103-fibonacci(int c);
 void 104-fibonacci(void);
 void 102-fibonacci(void);
+void 100-times_table(void);
 
 #endif
